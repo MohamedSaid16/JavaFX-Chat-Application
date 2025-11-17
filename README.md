@@ -1,5 +1,3 @@
-# JavaFX-Chat-Application
-A real-time multi-client chat application built with Java and JavaFX, featuring a client-server architecture with a modern graphical user interface.
 # JavaFX Chat Application
 
 A real-time multi-client chat application built with Java and JavaFX, featuring a client-server architecture with a modern graphical user interface.
@@ -95,6 +93,7 @@ java --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javaf
 - Message: data model
 
 ## Configuration
+
 ### Change Server Port
 In ChatServer.java:
 private static final int PORT = 12345;
@@ -111,7 +110,7 @@ resources/styles.css
 
 ### Connection refused
 - Server not running
-- Firewall blocking port 12345
+- Firewall might be blocking port 12345
 
 ### Username already taken
 - Choose another username
