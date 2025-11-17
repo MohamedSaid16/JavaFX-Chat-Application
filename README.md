@@ -1,3 +1,4 @@
+'''
 # 🎓 JavaFX Chat Application
 
 A real-time multi-client **Chat Application** built with **Java** and **JavaFX**, featuring a **client-server architecture** and a modern graphical user interface.
@@ -24,7 +25,7 @@ A real-time multi-client **Chat Application** built with **Java** and **JavaFX**
 
 ---
 
-## 📦 Project Structure'''
+## 📦 Project Structure
 
 java-chat/
 ├── src/
@@ -41,7 +42,7 @@ java-chat/
 ├── resources/
 │   └── styles.css
 └── pom.xml
-'''
+
 ---
 
 ## 📋 Installation & Setup
@@ -145,3 +146,4 @@ git commit -m "Add NewFeature"
 git push origin feature/NewFeature  
 
 Open a Pull Request.
+'''
