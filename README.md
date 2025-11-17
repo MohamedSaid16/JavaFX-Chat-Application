@@ -1,19 +1,31 @@
-'''
-# JavaFX Chat Application
+# 🎓 JavaFX Chat Application
 
-A real-time multi-client chat application built with Java and JavaFX, featuring a client-server architecture with a modern graphical user interface.
----
-## Features
-- Real-time messaging between multiple clients
-- Multi-client server support
-- Modern JavaFX GUI
-- Automatic join/leave notifications
-- Message timestamps
-- Real-time connection status
+A real-time multi-client **Chat Application** built with **Java** and **JavaFX**, featuring a **client-server architecture** and a modern graphical user interface.
+
 ---
 
-## Project Structure
-```
+## 🚀 Features
+
+- Real-time messaging between multiple clients  
+- Multi-client server support  
+- Modern JavaFX GUI  
+- Automatic join/leave notifications  
+- Message timestamps  
+- Real-time connection status  
+
+---
+
+## 🛠️ Technologies Used
+
+- **Backend:** Java  
+- **GUI:** JavaFX  
+- **Build Tool:** Maven  
+- **Architecture:** Client–Server Model  
+
+---
+
+## 📦 Project Structure
+
 java-chat/
 ├── src/
 │   ├── server/
@@ -29,112 +41,107 @@ java-chat/
 ├── resources/
 │   └── styles.css
 └── pom.xml
-```
+
 ---
-## Installation & Setup
+
+## 📋 Installation & Setup
 
 ### Method 1: Using Maven (Recommended)
+
 Clone the repository:
-'''
-git clone https://github.com/yourusername/java-chat.git
+
+git clone https://github.com/yourusername/java-chat.git  
 cd java-chat
-'''
+
 Build the project:
+
 mvn clean compile
----
+
 ### Method 2: Manual Setup
-- Install JavaFX SDK
-- Add JavaFX to your IDE module path
+
+- Install JavaFX SDK  
+- Add JavaFX to your IDE module path  
 - Add VM options:
-  '''
- module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml
-'''
+
+--module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml
+
 ---
-## Running the Application
+
+## ▶️ Running the Application
+
 ### Step 1: Start the Server
+
 Using Maven:
-'''
+
 mvn compile exec:java -Dexec.mainClass="server.ChatServer"
-'''
+
 Using Java:
-'''
+
 java -cp target/classes server.ChatServer
-'''
-Expected output:
+
+Expected output:  
 Chat Server started on port 12345
----
+
 ### Step 2: Start Client(s)
+
 Using Maven:
+
 mvn javafx:run
 
 Using Java:
-'''
+
 java --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml -cp target/classes client.ClientGUI
-'''
----
+
 ### Step 3: Connect and Chat
-- Default server: localhost:12345
-- Enter a username
-- Click "Connect"
-- Start chatting
----
-## Usage Guide
 
-### For Server Administrators
-- Default port: 12345
-- Console shows connected clients
-- All messages broadcast to everyone
+- Default server: localhost:12345  
+- Enter a username  
+- Click "Connect"  
+- Start chatting!  
 
-### For Users
-- Enter correct server IP + port
-- Choose a unique username
-- Press Enter or click Send
-- Click Disconnect to leave
 ---
-## Core Components
+
+## 🧩 Core Components
 
 ### Server Side
-- ChatServer: main server class
-- ClientHandler: manages each client
+
+- ChatServer: main server class  
+- ClientHandler: manages each client  
 
 ### Client Side
-- ChatClient: networking logic
-- ClientGUI: JavaFX UI
-- Message: data model
+
+- ChatClient: networking logic  
+- ClientGUI: JavaFX UI  
+- Message: data model  
+
 ---
-## Configuration
+
+## ⚙️ Configuration
 
 ### Change Server Port
-In ChatServer.java:
-private static final int PORT = 12345;
+
+In ChatServer.java:  
+private static final int PORT = 12345
 
 ### Customize UI
-Edit:
+
+Edit:  
 resources/styles.css
+
 ---
-## Troubleshooting
 
-### "JavaFX runtime components are missing"
-- JavaFX SDK not installed
-- Module path not configured
+## 🔧 Troubleshooting
 
-### Connection refused
-- Server not running
-- Firewall might be blocking port 12345
+- JavaFX runtime components missing – Check SDK and module path  
+- Connection refused – Make sure server is running and firewall allows port 12345  
+- Username already taken – Choose another username  
 
-### Username already taken
-- Choose another username
 ---
-## Contributing
-'''
-git checkout -b feature/NewFeature
-'''
-'''
-git commit -m "Add NewFeature"
-'''
-'''
-git push origin feature/NewFeature
-'''
+
+## 🤝 Contributing
+
+git checkout -b feature/NewFeature  
+git commit -m "Add NewFeature"  
+git push origin feature/NewFeature  
+
 Open a Pull Request.
-
----
