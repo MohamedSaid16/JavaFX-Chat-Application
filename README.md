@@ -24,7 +24,7 @@ A real-time multi-client **Chat Application** built with **Java** and **JavaFX**
 
 ---
 
-## 📦 Project Structure
+## 📦 Project Structure'''
 
 java-chat/
 ├── src/
@@ -41,7 +41,7 @@ java-chat/
 ├── resources/
 │   └── styles.css
 └── pom.xml
-
+'''
 ---
 
 ## 📋 Installation & Setup
