@@ -1,4 +1,3 @@
-'''
 # 🎓 JavaFX Chat Application
 
 A real-time multi-client **Chat Application** built with **Java** and **JavaFX**, featuring a **client-server architecture** and a modern graphical user interface.
@@ -27,7 +26,8 @@ A real-time multi-client **Chat Application** built with **Java** and **JavaFX**
 
 ## 📦 Project Structure
 
-java-chat/
+```
+JavaFX-Chat-Application/
 ├── src/
 │   ├── server/
 │   │   ├── ChatServer.java
@@ -42,6 +42,7 @@ java-chat/
 ├── resources/
 │   └── styles.css
 └── pom.xml
+```
 
 ---
 
@@ -51,20 +52,25 @@ java-chat/
 
 Clone the repository:
 
-git clone https://github.com/yourusername/java-chat.git  
-cd java-chat
+```sh
+git clone https://github.com/MohamedSaid16/JavaFX-Chat-Application.git  
+cd JavaFX-Chat-Application
+```
 
 Build the project:
 
+```sh
 mvn clean compile
+```
 
 ### Method 2: Manual Setup
 
 - Install JavaFX SDK  
 - Add JavaFX to your IDE module path  
 - Add VM options:
-
---module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml
+  ```
+  --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml
+  ```
 
 ---
 
@@ -74,11 +80,15 @@ mvn clean compile
 
 Using Maven:
 
+```sh
 mvn compile exec:java -Dexec.mainClass="server.ChatServer"
+```
 
 Using Java:
 
+```sh
 java -cp target/classes server.ChatServer
+```
 
 Expected output:  
 Chat Server started on port 12345
@@ -87,11 +97,15 @@ Chat Server started on port 12345
 
 Using Maven:
 
+```sh
 mvn javafx:run
+```
 
 Using Java:
 
+```sh
 java --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml -cp target/classes client.ClientGUI
+```
 
 ### Step 3: Connect and Chat
 
@@ -106,14 +120,14 @@ java --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javaf
 
 ### Server Side
 
-- ChatServer: main server class  
-- ClientHandler: manages each client  
+- `ChatServer`: main server class  
+- `ClientHandler`: manages each client  
 
 ### Client Side
 
-- ChatClient: networking logic  
-- ClientGUI: JavaFX UI  
-- Message: data model  
+- `ChatClient`: networking logic  
+- `ClientGUI`: JavaFX UI  
+- `Message`: data model  
 
 ---
 
@@ -121,13 +135,15 @@ java --module-path "/path/to/javafx-sdk/lib" --add-modules javafx.controls,javaf
 
 ### Change Server Port
 
-In ChatServer.java:  
-private static final int PORT = 12345
+In `ChatServer.java`:
+```java
+private static final int PORT = 12345;
+```
 
 ### Customize UI
 
 Edit:  
-resources/styles.css
+`resources/styles.css`
 
 ---
 
@@ -141,9 +157,10 @@ resources/styles.css
 
 ## 🤝 Contributing
 
+```sh
 git checkout -b feature/NewFeature  
 git commit -m "Add NewFeature"  
 git push origin feature/NewFeature  
+```
 
 Open a Pull Request.
-'''
