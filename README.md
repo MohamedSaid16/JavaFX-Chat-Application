@@ -1,3 +1,4 @@
+'''
 # JavaFX Chat Application
 
 A real-time multi-client chat application built with Java and JavaFX, featuring a client-server architecture with a modern graphical user interface.
@@ -120,3 +121,4 @@ git checkout -b feature/NewFeature
 git commit -m "Add NewFeature"
 git push origin feature/NewFeature
 Open a Pull Request.
+'''
